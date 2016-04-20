@@ -5,15 +5,22 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-	The Staging Area is defined as 'the subset of files in the working directory that wish to be git-commited'.
-	It allows for Untracked files in the working directory
-	Untracked files could be files compiled programs, test outputs, etc (that are wished not be commited)
+	The Staging Area is defined as 'the set of files in the working directory that wish to be git-commited'.
+	This allows for programmers to commit finished files and retain work-in-progress files
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	Ensure all files I wish to commit are placed in the Staging Area (use 'git status' to check)
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+
+	Master branch is production quality, never breaks, always work.
+	A new Branch is usually created for fixing bug, creating new features
+	So it's used all the time, unlike 'checkout commits', which is primarily used for 
+	This implies 'Branch merge' oftens quite often.
+	And branching is unlike forking
 
 How do the diagrams help you visualize the branch structure?
 
